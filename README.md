@@ -1,103 +1,84 @@
-Weather App
+# Weather App
 
-A sleek, interactive, and responsive weather application built with HTML, CSS, and JavaScript. The app fetches live weather data from the OpenWeatherMap API and displays current weather conditions and a 4-day forecast for any city.
+A sleek, interactive, and responsive weather application built with **HTML5**, **CSS3**, and **JavaScript (ES6+)**. The app fetches live weather data from the [OpenWeatherMap API](https://openweathermap.org/api) and displays current conditions plus a 4-day forecast for any city.
 
-Features
+![Weather App Screenshot](screenshots/main.png) <!-- You can replace this path with your actual screenshot path -->
 
-City Search: Search weather information by city name.
+## Features
 
-Current Weather Display: Shows temperature, weather conditions, humidity, and wind speed.
+- **City Search:** Find weather information for any city.
+- **Current Weather Display:** Shows temperature, weather conditions, humidity, and wind speed.
+- **Weather Icons:** Dynamically displays icons based on the weather.
+- **4-Day Forecast:** Forecast for the next 4 days at noon.
+- **Responsive Design:** Works seamlessly on mobile and desktop.
+- **User-Friendly UI:** Smooth animations, glassmorphism design, and intuitive layout.
+- **Error Handling:** Displays “City not found” for invalid city names.
 
-Weather Icons: Dynamically displays weather icons based on current conditions.
+## Screenshots
 
-4-Day Forecast: Provides forecast for the next 4 days at noon.
+| Search City | Current Weather | Dynamic Icons | 4-Day Forecast |
+|-------------|----------------|---------------|----------------|
+| ![Search](screenshots/search.png) | ![Weather](screenshots/current.png) | ![Icons](screenshots/icons.png) | ![Forecast](screenshots/forecast.png) |
 
-Responsive Design: Works seamlessly on mobile and desktop screens.
+## Technologies Used
 
-User-Friendly UI: Smooth animations, modern glassmorphism design, and intuitive layout.
+- **HTML5:** Semantic markup for structured content.
+- **CSS3:** Glassmorphism, responsive styling, animations.
+- **JavaScript (ES6+):** DOM manipulation, fetch API, async/await.
+- **OpenWeatherMap API:** Real-time weather and forecast data.
+- **Google Fonts & Material Icons:** Typography and iconography.
 
-Error Handling: Displays “City not found” message when invalid city names are entered.
+## Installation
 
-Screenshots
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/weather-app.git
+    ```
+2. **Navigate to the project folder:**
+    ```bash
+    cd weather-app
+    ```
+3. **Open `index.html` in your browser.**
 
+## Usage
 
-Search and find city weather
+- Enter a city name in the search input.
+- Click the **Search** button or press **Enter**.
+- View current weather and 4-day forecast.
+- Invalid city names show an error message.
 
+## API Integration
 
-Current weather display with dynamic icons
+The app requires a valid [OpenWeatherMap API](https://openweathermap.org/api) key.
 
-Technologies Used
+1. **Sign up** at [OpenWeatherMap](https://home.openweathermap.org/users/sign_up).
+2. Go to your [API keys](https://home.openweathermap.org/api_keys) page.
+3. Copy your API key.
+4. Open `script.js` and replace `'YOUR_API_KEY'`:
 
-HTML5 – Semantic markup for structured content.
+    ```javascript
+    // script.js
+    const apiKey = 'YOUR_API_KEY'; // <-- Replace with your actual API key
+    ```
 
-CSS3 – Glassmorphism design, responsive styling, animations.
+**Note:** Never share your API key publicly.
 
-JavaScript (ES6+) – DOM manipulation, fetch API, async/await for API calls.
+## Contributing
 
-OpenWeatherMap API – Provides real-time weather and forecast data.
+Contributions are welcome! Please open issues or pull requests for any improvements, bug fixes, or feature requests.
 
-Google Fonts & Material Icons – Typography and iconography.
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a Pull Request.
 
-Installation
+## License
 
-Clone the repository:
+This project is licensed under the [MIT License](LICENSE).
 
-git clone https://github.com/yourusername/weather-app.git
+## Acknowledgements
 
-
-Navigate to the project folder:
-
-cd weather-app
-
-
-Open index.html in your browser.
-
-Usage
-
-Enter the name of a city in the search input.
-
-Click the Search button or press Enter.
-
-View the current weather and 4-day forecast.
-
-If the city is not found, an error message will be displayed.
-
-API Integration
-
-OpenWeatherMap API Key: The app requires a valid API key. Replace the placeholder in script.js:
-
-const apiKey = "YOUR_API_KEY_HERE";
-
-
-Endpoints Used:
-
-Geocoding: https://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid={apiKey}
-
-Current Weather: https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={apiKey}&units=metric
-
-Forecast: https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={apiKey}&units=metric
-
-Folder Structure
-weather-app/
-│
-├── assets/
-│   ├── weather/          # Weather icons (svg)
-│   └── message/          # UI messages and illustrations
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
-Future Enhancements
-
-Add hourly forecast display.
-
-Implement geolocation to detect user’s city automatically.
-
-Enable theme toggle (day/night).
-
-Support multiple languages.
-
-License
-
-This project is licensed under the MIT License.
+- [OpenWeatherMap](https://openweathermap.org/)
+- [Google Fonts](https://fonts.google.com/)
+- [Material Icons](https://fonts.google.com/icons)
