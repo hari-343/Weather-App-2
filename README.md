@@ -1,84 +1,75 @@
-# Weather App
+# Weather-App
 
-A sleek, interactive, and responsive weather application built with **HTML5**, **CSS3**, and **JavaScript (ES6+)**. The app fetches live weather data from the [OpenWeatherMap API](https://openweathermap.org/api) and displays current conditions plus a 4-day forecast for any city.
+A modern, responsive weather application that allows users to search for any city and view current weather conditions as well as a 4-day forecast. Built with HTML, CSS, and JavaScript, the app fetches live data from the OpenWeatherMap API and features a sleek UI, dynamic weather icons, error handling, and smooth animations.
 
-![Weather App Screenshot](screenshots/main.png) <!-- You can replace this path with your actual screenshot path -->
+## :sparkles: Features
 
-## Features
+- **City Search:** Find weather information for any city worldwide.
+- **Current Weather Display:** Shows temperature, humidity, wind speed, and weather conditions.
+- **Dynamic Weather Icons:** Icons change based on live weather data.
+- **4-Day Forecast:** View weather predictions for the next four days.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Glassmorphism UI:** Modern, smooth animations and glass-like design.
+- **Error Handling:** Graceful error messages for invalid city entries or data issues.
 
-- **City Search:** Find weather information for any city.
-- **Current Weather Display:** Shows temperature, weather conditions, humidity, and wind speed.
-- **Weather Icons:** Dynamically displays icons based on the weather.
-- **4-Day Forecast:** Forecast for the next 4 days at noon.
-- **Responsive Design:** Works seamlessly on mobile and desktop.
-- **User-Friendly UI:** Smooth animations, glassmorphism design, and intuitive layout.
-- **Error Handling:** Displays “City not found” for invalid city names.
+## :computer: Demo
 
-## Screenshots
+Live demo: [Weather-App-2 Homepage](https://hari-343.github.io/Weather-App-2/)
 
-| Search City | Current Weather | Dynamic Icons | 4-Day Forecast |
-|-------------|----------------|---------------|----------------|
-| ![Search](screenshots/search.png) | ![Weather](screenshots/current.png) | ![Icons](screenshots/icons.png) | ![Forecast](screenshots/forecast.png) |
+## :hammer_and_wrench: Technologies
 
-## Technologies Used
+- **HTML5**: Semantic markup and structure
+- **CSS3**: Glassmorphism, responsive design, animations
+- **JavaScript (ES6+)**: DOM manipulation, async/await, fetch API
+- **OpenWeatherMap API**: Real-time weather and forecast data
 
-- **HTML5:** Semantic markup for structured content.
-- **CSS3:** Glassmorphism, responsive styling, animations.
-- **JavaScript (ES6+):** DOM manipulation, fetch API, async/await.
-- **OpenWeatherMap API:** Real-time weather and forecast data.
-- **Google Fonts & Material Icons:** Typography and iconography.
+## :package: Installation
 
-## Installation
-
-1. **Clone the repository:**
+1. **Clone the repo:**
     ```bash
-    git clone https://github.com/yourusername/weather-app.git
+    git clone (https://github.com/hari-343/Weather-App-2.git)
     ```
 2. **Navigate to the project folder:**
     ```bash
-    cd weather-app
+    cd Weather-App-2
     ```
 3. **Open `index.html` in your browser.**
 
-## Usage
+## :rocket: Usage
 
-- Enter a city name in the search input.
+- Enter a city name in the search box.
 - Click the **Search** button or press **Enter**.
-- View current weather and 4-day forecast.
-- Invalid city names show an error message.
+- View the current weather and 4-day forecast.
+- If the city is not found, an error message will be shown.
 
-## API Integration
+## :key: API Integration
 
-The app requires a valid [OpenWeatherMap API](https://openweathermap.org/api) key.
+This app requires an [OpenWeatherMap API](https://openweathermap.org/api) key.
 
-1. **Sign up** at [OpenWeatherMap](https://home.openweathermap.org/users/sign_up).
-2. Go to your [API keys](https://home.openweathermap.org/api_keys) page.
-3. Copy your API key.
-4. Open `script.js` and replace `'YOUR_API_KEY'`:
-
+1. Sign up at [OpenWeatherMap](https://home.openweathermap.org/users/sign_up).
+2. Get your API key from your account dashboard.
+3. Open `script.js` and replace `'YOUR_API_KEY'` with your key:
     ```javascript
-    // script.js
-    const apiKey = 'YOUR_API_KEY'; // <-- Replace with your actual API key
+    const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
     ```
 
-**Note:** Never share your API key publicly.
+> **Note:** Do not share your API key publicly.
 
-## Contributing
+## :handshake: Contributing
 
-Contributions are welcome! Please open issues or pull requests for any improvements, bug fixes, or feature requests.
+Contributions, issues and feature requests are welcome!  
+- Fork this repo
+- Create a feature branch (`git checkout -b feature/my-feature`)
+- Commit your changes (`git commit -am 'Add some feature'`)
+- Push to the branch (`git push origin feature/my-feature`)
+- Open a pull request
 
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a Pull Request.
+## :page_facing_up: License
 
-## License
+This project is open source. 
 
-This project is licensed under the [MIT License](LICENSE).
+## :tada: Acknowledgements
 
-## Acknowledgements
-
-- [OpenWeatherMap](https://openweathermap.org/)
+- [OpenWeatherMap API](https://openweathermap.org/)
 - [Google Fonts](https://fonts.google.com/)
 - [Material Icons](https://fonts.google.com/icons)
