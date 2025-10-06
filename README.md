@@ -2,16 +2,18 @@
 
 A modern, responsive weather application that allows users to search for any city and view current weather conditions as well as a 4-day forecast. Built with HTML, CSS, and JavaScript, the app fetches live data from the OpenWeatherMap API and features a sleek UI, dynamic weather icons, error handling, and smooth animations.
 
-Folder Structure
+## Folder Structure
+
+```
 weather-app/
-│
-├── assets/
-│   ├── weather/          # Weather icons (svg)
-│   └── message/          # UI messages and illustrations
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+├── assets/              # Static assets
+│   ├── weather/         # Weather icons (SVG)
+│   └── message/         # UI messages and illustrations
+├── index.html           # Main HTML file
+├── style.css            # Stylesheet
+├── script.js            # Main JavaScript file
+└── README.md            # Project documentation
+```
 
 ## :sparkles: Features
 
