@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 600;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('assets/bg.jpg');
+  height: 100dvh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  height: 100dvh;
+  width: 100%;
+ background: rgb(0, 0, 0, 0.15);
+ backdrop-filter: blur(15px);
+}
+
+.main-container {
+  width: 300px;
+  height: 496px;
+  border-radius: 12px;
+  z-index: 1;
+  background: linear-gradient(to top, rgb(0, 0, 0, 0.15), rgb(255, 255, 255, 0.15));
+  backdrop-filter: blur(100px);
+  padding: 20px;
+}
+
+.city-input {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 99px;
+  border: 3px solid transparent;
+  background: rgb(0, 0, 0, 0.15);
+  outline: none;
+  font-weight: 500;
+  transition: 0.25s border;
+  padding-right: 45px;
+}
+
+.input-container{
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.city-input:focus {
+    border: 3px solid rgb(0, 0, 0, 0.15);
+}
+
+.city-input::placeholder {
+    color:  rgb(255, 255, 255, 0.75);
+}
+
+.search-btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.location-date-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.regular-txt {
+  font-weight: 400;
+}
+
+.weather-summary {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-summary-img {
+  width: 120px;
+  height: 120px;
+}
+
+
+.weather-summary-info {
+  text-align: end;
+}
+
+.weather-summary-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+.condition-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1; 
+}
+
+.condition-item span {
+  font-size: 30px;
+  flex-shrink: 0; 
+}
+
+.condition-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.forecast-items-container{
+  display: flex;
+  overflow: scroll;
+  padding-bottom: 12px;
+  gap: 15px;
+}
+
+.forecast-items-container::-webkit-scrollbar{
+  height: 8px;
+}
+
+.forecast-items-container::-webkit-scrollbar-track{
+  background: rgb(0, 0, 0, 0.1);
+  border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb{
+  background: rgb(0, 0, 0, 0.15);
+  border-radius: 99px;
+}
+
+.forecast-item:hover{
+  background: rgb(255, 255, 255, 0.15);
+}
+.forecast-item{
+  min-width: 70px;
+  display: flex;
+  background: rgb(255, 255, 255, 0.1);
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 12px;
+  transition: 0.3s  background;
+}
+
+.forecast-item-img {
+  width: 35px;
+  height: 35px;
+}
+
+.section-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-top: 25%;
+}
+.message-img {
+  height: 180px;
+  width: fit-content;
+}
+
+.location-date-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  gap: 10px;                      
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.country-txt {
+  font-size: 15px;
+  font-weight: 600 !important;
+  color: white; 
+}
+
+
+.current-date-txt {
+  font-size: 0.9rem;
+  color: #555; 
+}
+
+ 
+
+
+
+
+.current-date-txt {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7); 
+}
+
+.forecast-item {
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+.forecast-item:hover {
+  transform: translateY(-3px);
+}
+
+.city-input:focus {
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.weather-summary-img,
+.forecast-item-img {
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.4));
+}
+
+
+
+
+
+
+
+
+
