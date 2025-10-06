@@ -50,10 +50,8 @@ This app requires an [OpenWeatherMap API](https://openweathermap.org/api) key.
 2. Get your API key from your account dashboard.
 3. Open `script.js` and replace `'YOUR_API_KEY'` with your key:
     ```javascript
-    const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
+    const apiKey = '3097363db227f665c88ddebd2556bff2'; // Replace with your actual API key
     ```
-
-> **Note:** Do not share your API key publicly.
 
 ## :handshake: Contributing
 
